@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Directorio Institucional — CESFAM La Unión</title>
+  <meta name="description" content="Directorio telefónico institucional — busca contactos, anexos y departamentos." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+  <link rel="icon" type="image/png" href="./img/favicon.png" />
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════════════════
+     HEADER
+     ═══════════════════════════════════════════════════ -->
+  <header class="main-header">
+    <!-- ── Top bar ── -->
+    <div class="header-top">
+      <div class="container header-top-content">
+        <div class="header-info">
+          <div class="info-item">
+            <svg class="icon-small" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+            <span id="currentDateTime">Cargando fecha y hora...</span>
+          </div>
+        </div>
+        <div class="header-user">
+          <a class="action-btn primary" href="https://cesfamtic.com/introduccionsuite" target="_blank" rel="noopener">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.196-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.783-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z" />
+            </svg>
+            <span>iNTRODUCCIÓN AL SISTEMA</span>
+          </a>
+          <a class="action-btn" href="https://cesfamlu.github.io/links/ " target="_blank" rel="noopener">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a2 2 0 01-2-2V10a2 2 0 012-2h8z" />
+            </svg>
+            <span>Principal</span>
+          </a>
+          <a class="action-btn" href="https://cesfamtic.com" target="_blank" rel="noopener">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a2 2 0 01-2-2V10a2 2 0 012-2h8z" />
+            </svg>
+            <span>Intranet TI</span>
+          </a>
+          <a class="action-btn" href="https://cesfamlu.github.io/FormularioSoporte/" target="_blank" rel="noopener">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a2 2 0 01-2-2V10a2 2 0 012-2h8z" />
+            </svg>
+            <span>Mesa de Ayuda TI</span>
+          </a>
+          <a class="action-btn" href="https://www.cesfamtic.com/cesfamteams" target="_blank" rel="noopener">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+            </svg>
+            <span>TEAMS CESFAM</span>
+          </a>
+          <!-- Dark mode toggle -->
+          <button id="themeToggle" class="btn-theme-toggle" aria-label="Cambiar tema claro/oscuro">
+            <svg class="icon-moon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+            </svg>
+            <svg class="icon-sun" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364-6.364l-.707.707M6.343 17.657l-.707.707M17.657 17.657l-.707-.707M6.343 6.343l-.707-.707M12 7a5 5 0 100 10A5 5 0 0012 7z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── Main header (logo + search) ── -->
+    <div class="header-main">
+      <div class="container header-main-content">
+        <div class="logo-section">
+          <div class="logo-wrap">
+            <img id="siteLogo" src="img/logo.png" alt="CESFAM La Unión" class="logo-image"
+              onerror="this.style.display='none'; document.getElementById('logoFallback').style.display='flex'">
+            <span id="logoFallback" class="logo-fallback" style="display:none">CESFAM<br>La Unión</span>
+          </div>
+        </div>
+        <div class="search-section">
+          <div class="search-box">
+            <svg class="search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+            <input type="text" id="searchInput" placeholder="Buscar en todas las herramientas..." autocomplete="off">
+            <button id="clearSearch" class="clear-btn hidden" aria-label="Limpiar búsqueda">
+              <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════════
+     MAIN LAYOUT
+     ═══════════════════════════════════════════════════ -->
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <nav class="sidebar-nav">
+        <button class="nav-btn active" data-group="all">
+          <i class="material-icons-round">apps</i> Todos
+        </button>
+        <button class="nav-btn" data-group="muni">
+          <i class="material-icons-round">account_balance</i> Municipalidad
+        </button>
+        <button class="nav-btn" data-group="salud">
+          <i class="material-icons-round">local_hospital</i> Salud
+        </button>
+        <button class="nav-btn" data-group="daem">
+          <i class="material-icons-round">school</i> DAEM
+        </button>
+      </nav>
+      <div class="sidebar-footer">
+        <span class="sidebar-badge" id="totalCount">0 contactos</span>
+      </div>
+    </aside>
+
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Abrir menú">
+      <i class="material-icons-round">menu</i>
+    </button>
+
+    <main class="main-content">
+      <section id="directoryContainer" class="directory-grid"></section>
+      <section id="emptyState" class="empty-state hidden">
+        <i class="material-icons-round">search_off</i>
+        <h3>No se encontraron resultados</h3>
+        <p>Intenta con otro término de búsqueda</p>
+      </section>
+    </main>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════
+     FOOTER
+     ═══════════════════════════════════════════════════ -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-content">
+
+          <!-- Col 1: Brand -->
+          <section class="footer-section footer-brand">
+            <span class="footer-brand-name">CESFAM La Unión</span>
+            <p class="footer-brand-desc">Portal de herramientas digitales para el equipo de salud. Área de Informática.</p>
+            <div class="footer-badge">
+              <span class="footer-badge-dot"></span>
+              Sistemas operativos
+            </div>
+          </section>
+
+          <!-- Col 2: Contacto -->
+          <section class="footer-section">
+            <h3 class="footer-title">Contacto</h3>
+            <p class="footer-text">
+              <svg class="footer-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              <a href="mailto:informacionescesfamlaunion@gmail.com" class="footer-text-link">informaciones<wbr>cesfamlaunion<wbr>@gmail.com</a>
+            </p>
+            <p class="footer-text">
+              <svg class="footer-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
+              <a href="mailto:some@munilaunion.cl" class="footer-text-link">some@munilaunion.cl</a>
+            </p>
+            <p class="footer-text">
+              <svg class="footer-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                  d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              </svg>
+              <span>La Unión, Los Ríos</span>
+            </p>
+          </section>
+
+          <!-- Col 3: Institucional -->
+          <section class="footer-section">
+            <h3 class="footer-title">Institucional</h3>
+            <ul class="footer-links">
+              <li><a class="footer-link" href="https://www.minsal.cl" target="_blank" rel="noopener">Ministerio de Salud</a></li>
+              <li><a class="footer-link" href="https://www.fonasa.cl" target="_blank" rel="noopener">FONASA</a></li>
+              <li><a class="footer-link" href="https://www.gob.cl" target="_blank" rel="noopener">Gobierno de Chile</a></li>
+              <li><a class="footer-link" href="https://www.cesfamtic.com" target="_blank" rel="noopener">Intranet TI</a></li>
+            </ul>
+          </section>
+          <!-- Col 4: CESFAM -->
+          <section class="footer-section">
+            <h3 class="footer-title">CESFAM</h3>
+            <ul class="footer-links">
+              <li><a class="footer-link" href="https://www.facebook.com/cesfamlu/?locale=es_LA" target="_blank" rel="noopener">Facebook</a></li>
+              <li><a class="footer-link" href="https://www.youtube.com/@cesfamlu" target="_blank" rel="noopener">Youtube</a></li>
+              <li><a class="footer-link" href="https://www.instagram.com/cesfamlu/?hl=es" target="_blank" rel="noopener">Instagram</a></li>
+              <li><a class="footer-link" href="https://cesfamlu.github.io/FormularioSoporte" target="_blank" rel="noopener">Soporte TI</a></li>
+            </ul>
+          </section>
+
+        </div><!-- /.footer-content -->
+
+        <!-- Footer bottom bar -->
+        <div class="footer-bottom">
+          <div class="footer-bottom-left">
+            <span class="footer-copyright">© <span id="year">2026</span> CESFAM La Unión · Área de Informática</span>
+            <span class="footer-meta">
+              <span>Versión 4.0</span>
+              <span class="footer-meta-dot"></span>
+              <span>Herramientas digitales</span>
+            </span>
+          </div>
+          <a href="#" class="footer-back-top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">
+            <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+            </svg>
+            Volver arriba
+          </a>
+        </div>
+
+      </div><!-- /.footer-inner -->
+    </div><!-- /.container -->
+  </footer>
+
+  <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+  <script type="module" src="./js/app.js"></script>
+</body>
+
+</html>
